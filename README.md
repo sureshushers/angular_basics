@@ -37,10 +37,17 @@ However, inorder to get the compiled dist folder for the prod ready state of the
 - When you execute the angular app, the entry poiint is main.ts file. The angular compiler knows this thru the entry in angular.json config file.
 - platformnBrowserDynamic() method in main.ts file is responsible to load the angular app while loading. The platformbrowserdynamic is responsible to load the angular app in the desktop browser, which in turn loads AppModule which inturn loads the <app-root><app-root>.
 
-## Angular Project --> index.html->angular.json->main.ts ->AppModule->AppCompnent
+## Angular Project --> index.html->angular.json->main.ts ->AppModule->AppCompnent ->View template (app.component.html) 
 
 ## App Module: 
 declarations []: TSpecify the components, directive and pipes which are required for this module to work.
 imports: List all the external modules which is required for the module to work.
 providers: Register all the services that are required.
 Bootstrap[]: Specify the component that needs to be loaded when the appmodule is loaded.
+
+
+# What is Component:
+- Component is a piece of user interface.
+- Every angular app has one component called root component or app component
+- The root component has child component.
+- 
